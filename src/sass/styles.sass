@@ -9,7 +9,7 @@ header
   position: fixed
   top: 0
   width: 100%
-  z-index: 2
+  z-index: 3
 
 nav
   height: 50px
@@ -143,6 +143,11 @@ nav
   color: #FFFFFF
   text-align: center
   justify-content: center
+  position: relative
+  z-index: 2
+  &_white
+    background-color: white
+    color: black
 
 .title
   margin-top: 40px
@@ -154,6 +159,10 @@ nav
   text-align: center
   text-transform: uppercase
   color: #222222
+  position: relative
+  z-index: 2
+  &_white
+    color: white
 
 .subtitle
   font-weight: 400
@@ -161,8 +170,11 @@ nav
   line-height: 21px
   color: #222222
   text-align: center
-  // margin-top: 19px
-
+  position: relative
+  z-index: 2
+  &_white
+    color: white
+ 
 .benefits
   min-height: 850px
   padding-top: 20px
@@ -251,37 +263,30 @@ nav
       bottom: 35px
       // перемещает элемент влево -50% от ширины этого блока
       transform: translateX(-50%)
-.capabilities
-  min-height: 900px
-  &_block_1
-    position: relative
-    padding-top: 59px
-    height: 502px
-    background: url(../img/car_black_bg.png) center (center / cover) no-repeat
-    .lable
-      background-color: white
-      color: black
-    .title
-      color: white
-    .subtitle
-      margin: 0
-      font-size: 17px
-      line-height: 24px
-      text-align: center
-      color: white
-    .car
-      position: absolute
-      bottom: -213px
-      left: 50%
-      transform: translateX(-392px)
-  &_block_2
-    padding-top: 210px
-    padding-bottom: 138px
-    height: 397px
-    background: url(../img/car_white_bg.png) center (center / cover) no-repeat
-    .subtitle
-      font-weight: 300
-      font-size: 17px
-      line-height: 24px
-      color: #222222
 
+.capabilities
+  position: relative
+  min-height: 895px
+  padding: 57px 0 138px 0
+  background: url(../img/mobile_bg.png) center (center / cover) no-repeat
+  &_img 
+    position: relative
+    display: block
+    margin: 56px auto 0 auto
+    z-index: 2
+  &_descr 
+    text-align: center
+    color: #222222
+    font-size: 17px
+    font-weight: 300
+    line-height: 24px
+  .black 
+    // Выносим за контейнера
+    position: absolute 
+    top: 0
+    left: 0
+    // Устанавливаем высоту и ширину 100% от секции capabilities
+    height: 500px
+    width: 100%
+    background-color: #070716
+    z-index: 1
