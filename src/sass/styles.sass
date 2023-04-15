@@ -131,7 +131,6 @@ nav
 .lable
   width: 113px
   height: 24px
-  margin-top: 20px
   margin-inline: auto
   display: flex
   align-items: center
@@ -145,14 +144,6 @@ nav
   text-align: center
   justify-content: center
 
-.subtitle
-  font-weight: 400
-  font-size: 17px
-  line-height: 21px
-  color: #222222
-  text-align: center
-
-
 .title
   margin-top: 40px
   margin-inline: auto
@@ -164,8 +155,17 @@ nav
   text-transform: uppercase
   color: #222222
 
+.subtitle
+  font-weight: 400
+  font-size: 17px
+  line-height: 21px
+  color: #222222
+  text-align: center
+  // margin-top: 19px
+
 .benefits
   min-height: 850px
+  padding-top: 20px
   background-color: #fff
 
   .benefits_item
@@ -202,3 +202,86 @@ nav
         color: #1EACC7
         width: 371px
         height: auto
+.mobile
+  min-height: 864px
+  padding: 48px 0 79px 0
+  background: url(../img/mobile_bg.png) center (center / cover) no-repeat
+  .row
+    margin-top: 30px
+  &_item
+    width: 320px
+    height: 280px
+    opacity: 0.9
+    margin: 0 auto
+    margin-bottom: 19px
+    padding-top: 92px
+    position: relative
+    &_1
+      background: url(../img/card-1.png) center (center / cover) no-repeat
+    &_2
+      background: url(../img/card-2.png) center (center / cover) no-repeat
+    &_3
+      background: url(../img/card-3.png) center (center / cover) no-repeat
+    &_4
+      background: url(../img/card-4.png) center (center / cover) no-repeat
+    &_5
+      background: url(../img/card-5.png) center (center / cover) no-repeat
+    &_6
+      background: url(../img/card-6.png) center (center / cover) no-repeat
+    &_subtitle
+      color: #fff
+      font-size: 24px
+      font-weight: 400
+      line-height: 31px
+      text-transform: uppercase
+      text-align: center
+    &_plus
+      // Размеры форма заливка
+      width: 26px
+      height: 26px
+      background-color: #000000
+      border-radius: 100%
+      // Позиционирование картинки плюса
+      display: flex
+      align-items: center
+      justify-content: center
+      // Перемещаем элемент по центру-X и вниз
+      position: absolute
+      left: 50%
+      bottom: 35px
+      // перемещает элемент влево -50% от ширины этого блока
+      transform: translateX(-50%)
+.capabilities
+  min-height: 900px
+  &_block_1
+    position: relative
+    padding-top: 59px
+    height: 502px
+    background: url(../img/car_black_bg.png) center (center / cover) no-repeat
+    .lable
+      background-color: white
+      color: black
+    .title
+      color: white
+    .subtitle
+      margin: 0
+      font-size: 17px
+      line-height: 24px
+      text-align: center
+      color: white
+    .car
+      position: absolute
+      bottom: -213px
+      left: 50%
+      transform: translateX(-392px)
+  &_block_2
+    padding-top: 210px
+    padding-bottom: 138px
+    height: 397px
+    background: url(../img/car_white_bg.png) center (center / cover) no-repeat
+    .subtitle
+      font-weight: 300
+      font-size: 17px
+      line-height: 24px
+      color: #222222
+
