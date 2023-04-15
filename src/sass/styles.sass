@@ -2,11 +2,15 @@ $blue_color: value 1
 $black_color: #000000
 $white_color: #ffffff
 $blue_color: #1EACC7
+$pink_color: #ff5656
 $blue_color_1: #1CA8C3
 $blue_color_2: #1FBAD6
 
-
-$pink_color: #c71e4e
+@mixin btn_hover()
+  &:hover
+    background-image: none
+    background-color: $blue_color
+  
 *
   font-family: 'Roboto', sans-serif
 
@@ -45,17 +49,17 @@ nav
   background-color: rgba(0, 0, 0, 0.6)
   padding-block: 14px
 
-  .subheader_logo
+  &_logo
     width: 100%
 
-  .subheader_official
+  &_official
     margin-top: 6px
     color: $white_color
     font-size: 13px
     font-weight: 300
     opacity: 0.5
 
-  .subheader_call
+  &_call
     margin-top: 6px
     font-weight: 300
     font-size: 12px
@@ -63,7 +67,7 @@ nav
     color: $white_color
     text-align: right
 
-  .subheader_phone
+  &_phone
     display: block
     margin-top: 11px
     font-weight: 400
@@ -73,7 +77,7 @@ nav
     text-align: right
     line-height: 12px
 
-  .subheader_btn
+  &_btn
     width: 100%
     width: 172px
     height: 46px
@@ -87,13 +91,15 @@ nav
     font-weight: 400
     text-transform: uppercase
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    @include btn_hover()
+    
 
 .promo
   min-height: 714px
   background: url(../img/uber_bg.png) center (center / cover) no-repeat
   padding: 50px 0 135px 0
 
-  .promo_header
+  &_header
     color: $white_color
     font-size: 60px
     line-height: 60px
@@ -103,7 +109,7 @@ nav
     margin-top: 57px
     text-align: center
 
-  .promo_subheader
+  &_subheader
     color: $white_color
     font-size: 36px
     line-height: 36px
@@ -113,7 +119,7 @@ nav
     margin-top: 22px
     text-align: center
 
-  .promo_descr
+  &_descr
     color: $white_color
     font-size: 18px
     font-weight: 400
@@ -121,7 +127,7 @@ nav
     text-align: center
     margin-top: 30px
 
-  .promo_btn
+  &_btn
     display: block
     margin: 118px auto 0 auto
     width: 259px
@@ -136,6 +142,7 @@ nav
     font-weight: 400
     text-transform: uppercase
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    @include btn_hover()
 
 .lable
   width: 113px
@@ -272,7 +279,26 @@ nav
       bottom: 35px
       // перемещает элемент влево -50% от ширины этого блока
       transform: translateX(-50%)
-
+      &::before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $blue_color
+        transition: 0.6s all
+      &:after
+        content: ''
+        display: block
+        height: 14px
+        width: 2px
+        background-color: $blue_color
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        transition: 0.6s all
+      &:hover
+        &:before, &:after
+          background-color: $pink_color
 .capabilities
   position: relative
   min-height: 895px
