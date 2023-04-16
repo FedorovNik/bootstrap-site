@@ -325,3 +325,50 @@ nav
     width: 100%
     background-color: #070716
     z-index: 1
+.require
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+    &_nmb
+      margin-bottom: 0
+  &_title
+    color: #1ca8c3
+    font-size: 22px
+    font-weight: 400
+    text-transform: uppercase
+  &_list
+    margin-top: 22px
+    list-style-type: none
+    padding-left: 50px
+    li
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 10px
+      position: relative
+      &:before
+        content: ''
+        // С использованием псевдоэлемента
+        // display: inline-block
+        // vertical-align: middle
+        // transform: translate(-11px, 0px)
+        display: block
+        position: absolute
+        left: -32px
+        top: 3px
+        width: 21px
+        height: 20px
+        background: url(../icons/checkbox_blue.png) center (center / cover) no-repeat
+  &_descr
+    margin-top: 25px
+    font-size: 17px
+    font-weight: 300
+    line-height: 24px
+    color: #1ca8c3      
+  .warning
+    .require_title
+      color: $pink_color
+    .require_list
+      li
+        &:before
+          background: url(../icons/checkbox_pink.png) center (center / cover) no-repeat
