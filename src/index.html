@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap</title>
     <!-- Щрифты с google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -30,6 +30,11 @@
                     <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
                 </ul>
             </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
 
     </header>
@@ -37,15 +42,16 @@
         <div class="subheader">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 offset-md-1">
+                    <div class="col-6 col-sm-6 col-md-4 offset-md-1 col-lg-4 offset-lg-1">
                         <a href="#" class="subheader_logo"><img src="img/Uber.png" alt=""></a>
                         <div class="subheader_official">Официальный партнер Uber в Москве</div>
                     </div>
-                    <div class="col-md-2 offset-md-2">
+                    <div class="xs-hiden col-6 col-md-3 offset-md-1 offset-md-0 col-lg-2 offset-lg-2 col-xl-2 offset-xl-2">
                         <div class="subheader_call">Звоните нам ежедневно</div>
                         <a href="tel:84957970988" class="subheader_phone">8 495 797 09 88</a>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-6 offset-sm-1 col-sm-5 col-md-3 offset-md-0 offset-lg-0 col-lg-3">
+                        <a href="tel:84957970988" class="xs-visible subheader_phone">8 495 797 09 88</a>
                         <button class="subheader_btn">Заказать звонок</button>
                     </div>
                 </div>
@@ -53,7 +59,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-10 offset-md-1">
+                <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
                     <h1 class="promo_header">
                         КОМПАНИЯ UBER PARTNERS!
                     </h1>
@@ -87,10 +93,10 @@
                             <img src="../src/icons/icon-1.svg" alt="1">
                         </div>
                         <div class="benefits_item_descr">
-                            <div class="descr_subtext">
+                            <div class="benefits_item_descr_subtext">
                                 Никаких наличных, оплата происходит автоматически
                             </div>
-                            <div class="descr_text">
+                            <div class="benefits_item_descr_text">
                                 Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет
                                 никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя,
                                 Вам не нужно искать мелкие деньги для размена.
@@ -105,10 +111,10 @@
                             <img src="../src/icons/icon-2.svg" alt="2">
                         </div>
                         <div class="benefits_item_descr">
-                            <div class="descr_subtext">
+                            <div class="benefits_item_descr_subtext">
                                 Комиссия 8% + БОНУСЫ
                             </div>
-                            <div class="descr_text">
+                            <div class="benefits_item_descr_text">
                                 У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши
                                 конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают
                                 больше!
@@ -123,10 +129,10 @@
                             <img src="../src/icons/icon-3.svg" alt="3">
                         </div>
                         <div class="benefits_item_descr">
-                            <div class="descr_subtext">
+                            <div class="benefits_item_descr_subtext">
                                 Высокий доход с гарантированными выплатами
                             </div>
-                            <div class="descr_text">
+                            <div class="benefits_item_descr_text">
                                 Мы выплачиваем заработную плату на личную
                                 банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать
                                 декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.
@@ -141,10 +147,10 @@
                             <img src="../src/icons/icon-4.svg" alt="4">
                         </div>
                         <div class="benefits_item_descr">
-                            <div class="descr_subtext">
+                            <div class="benefits_item_descr_subtext">
                                 Работа в удобное время, никаких графиков
                             </div>
-                            <div class="descr_text">
+                            <div class="benefits_item_descr_text">
                                 Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить,
                                 нажимаете выйти с линии. Вы можете подраба-
                                 тывать только утром, вечером, в выходные или праздничные дни!
@@ -159,10 +165,10 @@
                             <img src="../src/icons/icon-5.svg" alt="5">
                         </div>
                         <div class="benefits_item_descr">
-                            <div class="descr_subtext">
+                            <div class="benefits_item_descr_subtext">
                                 Комфортное, прозрачное и простое подключение
                             </div>
-                            <div class="descr_text">
+                            <div class="benefits_item_descr_text">
                                 Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы
                                 присылаете нам копии документов, мы регистрируем Вас и присылаем данные для подключения,
                                 через 1-2 дня Вы можете начинать работать!
@@ -177,10 +183,10 @@
                             <img src="../src/icons/icon-6.svg" alt="6">
                         </div>
                         <div class="benefits_item_descr">
-                            <div class="descr_subtext">
+                            <div class="benefits_item_descr_subtext">
                                 Всегда большое количество заказов
                             </div>
-                            <div class="descr_text">
+                            <div class="benefits_item_descr_text">
                                 Приложение показывает, где на данный момент больше всего заказов и где действуют
                                 повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры всегда
                                 приятные и абсолютно неконфликтные люди, которых приятно возить.
@@ -195,10 +201,10 @@
                             <img src="../src/icons/icon-7.svg" alt="7">
                         </div>
                         <div class="benefits_item_descr">
-                            <div class="descr_subtext">
+                            <div class="benefits_item_descr_subtext">
                                 Круглосуточная поддержка
                             </div>
-                            <div class="descr_text">
+                            <div class="benefits_item_descr_text">
                                 В Uber действует круглосуточная поддержка водителей по электронной почте. Если что-то
                                 непонятно, Вы всегда можете задать вопрос через On-line консультацию.
                             </div>
@@ -212,10 +218,10 @@
                             <img src="../src/icons/icon-8.svg" alt="8">
                         </div>
                         <div class="benefits_item_descr">
-                            <div class="descr_subtext">
+                            <div class="benefits_item_descr_subtext">
                                 Без шашечек и наклеек
                             </div>
-                            <div class="descr_text">
+                            <div class="benefits_item_descr_text">
                                 Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его
                                 наклейками.
                             </div>
@@ -234,37 +240,37 @@
                 телефон
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile_item mobile_item_1">
                         <div class="mobile_item_subtitle">Оформление заказа одним касанием</div>
                         <div class="mobile_item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile_item mobile_item_2">
                         <div class="mobile_item_subtitle">Надёжная подача</div>
                         <div class="mobile_item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile_item mobile_item_3">
                         <div class="mobile_item_subtitle">Прозрачные цены</div>
                         <div class="mobile_item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile_item mobile_item_4">
                         <div class="mobile_item_subtitle">Безналичная оплата</div>
                         <div class="mobile_item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile_item mobile_item_5">
                         <div class="mobile_item_subtitle">Обратная связь</div>
                         <div class="mobile_item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile_item mobile_item_6">
                         <div class="mobile_item_subtitle">Разделить стоимость поездки</div>
                         <div class="mobile_item_plus"></div>
@@ -361,10 +367,9 @@
         </div>
     </section>
 
-    <footer>
+    <!-- <footer>
         <div class="footer_divider"></div>
         <div class="footer_wrapper">
-            <!-- Если не оборачивать каждый блок в обертку - получится криво -->
             <div>
                 <div class="footer_social">
                     <a href="#" class="footer_social_item">
@@ -412,7 +417,8 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
