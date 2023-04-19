@@ -123,6 +123,8 @@
             align-items: center
             text-align: center
             &_descr
+                &_subtext, &_text
+                    width: 327px
                 &_subtext
                     margin-top: 20px
     .capabilities
@@ -188,7 +190,7 @@
         left: -100%
         width: 50%
         height: 100vh
-        height: -webkit-fill-available
+        max-height: -webkit-fill-available
         padding: 20px 15px
         background-color: rgba(0,0,0, .8)
         transition: 0.6s all
@@ -324,7 +326,7 @@
         left: -100%
         width: 85%
         height: 100vh
-        height: -webkit-fill-available
+        max-height: -webkit-fill-available
         padding: 20px 15px
         background-color: rgba(0,0,0, .8)
         transition: 0.6s all
